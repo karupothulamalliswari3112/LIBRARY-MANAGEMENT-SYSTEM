@@ -1,10 +1,10 @@
-# 📚 Library Management System (Java)
+# 📚 Library Management System
 
-![Java](https://img.shields.io/badge/Java-17%2B-orange?style=for-the-badge&logo=java)
+![Java](https://img.shields.io/badge/Java-Core-orange?style=for-the-badge&logo=openjdk)
 ![OOP](https://img.shields.io/badge/OOP-Concepts-blue?style=for-the-badge)
-![Status](https://img.shields.io/badge/Project-Completed-brightgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 
-A **console-based Library Management System** developed using **Core Java**. This project demonstrates Object-Oriented Programming (OOP), Collections Framework, Exception Handling, and Java Date & Time API by simulating real-world library operations such as adding books, issuing books, returning books, searching books, and calculating overdue fines.
+A **console-based Library Management System** developed using **Core Java**. This project demonstrates **Object-Oriented Programming (OOP)**, **Collections Framework**, **Exception Handling**, and the **Java Date & Time API** by simulating real-world library operations.
 
 ---
 
@@ -12,16 +12,16 @@ A **console-based Library Management System** developed using **Core Java**. Thi
 
 - 📖 Add new books
 - 👤 Register library members
-- 📚 Issue books to members
-- 🔄 Return issued books
+- 📚 Issue books
+- 🔄 Return books
 - 💰 Automatic overdue fine calculation
 - 🔍 Search books by title
 - ✍️ Search books by author
 - 📋 Display all books
 - ✅ Display available books
 - 📕 Display issued books
-- 👥 Display registered members
-- ⚠️ Custom exception handling for invalid operations
+- 👥 Display all registered members
+- ⚠️ Custom exception handling
 
 ---
 
@@ -31,19 +31,19 @@ A **console-based Library Management System** developed using **Core Java**. Thi
 - Object-Oriented Programming (OOP)
 - Collections Framework
 - Exception Handling
-- Java Date & Time API (`java.time`)
-- HashMap
+- Java Date & Time API
 - ArrayList
+- HashMap
 
 ---
 
 # 📚 Java Concepts Implemented
 
 | Concept | Implementation |
-|---------|----------------|
+|----------|----------------|
 | Encapsulation | Book & Member classes |
 | Inheritance | StudentMember extends Member |
-| Polymorphism | Method overriding (`toString()`) |
+| Polymorphism | Method Overriding (`toString()`) |
 | Collections | ArrayList & HashMap |
 | Exception Handling | Custom Exceptions |
 | Date & Time API | LocalDate & ChronoUnit |
@@ -55,6 +55,12 @@ A **console-based Library Management System** developed using **Core Java**. Thi
 
 ```text
 LIBRARY-MANAGEMENT-SYSTEM/
+│
+├── screenshots/
+│   ├── menu.png
+│   ├── issue.png
+│   ├── return.png
+│   └── fine.png
 │
 ├── Book.java
 ├── Member.java
@@ -74,27 +80,19 @@ LIBRARY-MANAGEMENT-SYSTEM/
 
 # ▶️ How to Run
 
-### 1️⃣ Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/karupothulamalliswari3112/LIBRARY-MANAGEMENT-SYSTEM.git
 ```
 
-### 2️⃣ Open Project
-
-Open the project in:
-
-- VS Code
-- IntelliJ IDEA
-- Eclipse
-
-### 3️⃣ Compile
+### Compile
 
 ```bash
 javac *.java
 ```
 
-### 4️⃣ Run
+### Run
 
 ```bash
 java Main
@@ -104,7 +102,7 @@ java Main
 
 # 🖥 Sample Output
 
-## Main Menu
+### Main Menu
 
 ```text
 ===== LIBRARY MANAGEMENT SYSTEM =====
@@ -122,18 +120,14 @@ java Main
 0. Exit
 ```
 
----
-
-## Issue Book
+### Issue Book
 
 ```text
 Book "The Alchemist" issued to member M201.
 Due Date: 23-07-2026
 ```
 
----
-
-## Return Book
+### Return Book
 
 ```text
 Book "The Alchemist" returned.
@@ -141,9 +135,7 @@ Returned on time.
 No Fine.
 ```
 
----
-
-## Fine Calculation
+### Fine Calculation
 
 ```text
 Book "The Alchemist" returned.
@@ -155,36 +147,51 @@ Fine: Rs. 25.0
 
 # 📸 Screenshots
 
-> *(Upload screenshots later.)*
+## 🏠 Main Menu
 
-| Menu | Issue Book | Return Book | Fine |
-|------|------------|-------------|------|
-| Coming Soon | Coming Soon | Coming Soon | Coming Soon |
+![Main Menu](screenshots/menu.png)
+
+---
+
+## 📚 Issue Book
+
+![Issue Book](screenshots/issue.png)
+
+---
+
+## 🔄 Return Book
+
+![Return Book](screenshots/return.png)
+
+---
+
+## 💰 Fine Calculation
+
+![Fine Calculation](screenshots/fine.png)
 
 ---
 
 # 🚀 Future Enhancements
 
-- 💾 File Handling
-- 🗄 Database Integration (MySQL)
+- 💾 Store data using File Handling
+- 🗄 MySQL Database Integration
 - 🖥 GUI using JavaFX or Swing
 - 🌐 Web-based Library Management System
-- 📊 Reports & Analytics
 - 🔐 Login Authentication
-- 📧 Email Notifications
+- 📊 Reports & Analytics Dashboard
 
 ---
 
 # 🎯 Learning Outcomes
 
-This project helped me understand:
+Through this project, I gained practical experience in:
 
-- Object-Oriented Programming
+- Object-Oriented Programming (OOP)
 - Java Collections Framework
-- Exception Handling
+- Custom Exception Handling
 - Java Date & Time API
-- Clean Code Structure
-- Real-world Project Development
+- Console Application Development
+- Clean Code Organization
 
 ---
 
@@ -192,10 +199,12 @@ This project helped me understand:
 
 **Karupothula Malliswari**
 
-B.Tech – Computer Science & Engineering
+🎓 B.Tech – Computer Science & Engineering
 
-GitHub: https://github.com/karupothulamalliswari3112
+🔗 GitHub: https://github.com/karupothulamalliswari3112
 
 ---
 
-⭐ **If you found this project useful, consider giving it a Star!**
+## 🌟 Support
+
+If you found this project helpful, please consider giving it a ⭐ on GitHub.
