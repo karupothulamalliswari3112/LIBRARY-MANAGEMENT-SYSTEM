@@ -1,38 +1,61 @@
 # 📚 Library Management System (Java)
 
-A console-based Library Management System built using core Java concepts — OOP, Collections, custom exception handling, and date/time calculations. Simulates real-world library operations: adding books/members, issuing, returning, searching, and calculating overdue fines.
+![Java](https://img.shields.io/badge/Java-17%2B-orange?style=for-the-badge&logo=java)
+![OOP](https://img.shields.io/badge/OOP-Concepts-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen?style=for-the-badge)
+
+A **console-based Library Management System** developed using **Core Java**. This project demonstrates Object-Oriented Programming (OOP), Collections Framework, Exception Handling, and Java Date & Time API by simulating real-world library operations such as adding books, issuing books, returning books, searching books, and calculating overdue fines.
 
 ---
 
-## Features
+# ✨ Features
 
-- Add new books and members
-- Issue a book to a member (tracks issue date & due date)
-- Return a book (auto-calculates overdue fine)
-- Search books by title or author
-- View all books / only available books
-- View all currently issued books with due dates
-- Custom exceptions for invalid operations (book not found, already issued, not a member, etc.)
-
----
-
-## Tech Concepts Used
-
-| Concept | Where it's used |
-|---|---|
-| OOP (Encapsulation) | `Book`, `Member` — private fields with getters/setters |
-| Inheritance | `StudentMember extends Member` |
-| Collections | `ArrayList<Book>` for listing, `HashMap<String, Book>` for fast ID lookup |
-| Custom Exceptions | `BookNotFoundException`, `BookAlreadyIssuedException`, `BookNotIssuedException`, `InvalidMemberException` |
-| Date/Time API | `LocalDate`, `ChronoUnit` for issue/due dates and fine calculation |
-| Separation of Concerns | `FineCalculator` and `DateUtil` kept independent of core `Library` logic |
+- 📖 Add new books
+- 👤 Register library members
+- 📚 Issue books to members
+- 🔄 Return issued books
+- 💰 Automatic overdue fine calculation
+- 🔍 Search books by title
+- ✍️ Search books by author
+- 📋 Display all books
+- ✅ Display available books
+- 📕 Display issued books
+- 👥 Display registered members
+- ⚠️ Custom exception handling for invalid operations
 
 ---
 
-## Project Structure
+# 🛠 Technologies Used
 
-```
-LibraryManagementSystem/
+- Java
+- Object-Oriented Programming (OOP)
+- Collections Framework
+- Exception Handling
+- Java Date & Time API (`java.time`)
+- HashMap
+- ArrayList
+
+---
+
+# 📚 Java Concepts Implemented
+
+| Concept | Implementation |
+|---------|----------------|
+| Encapsulation | Book & Member classes |
+| Inheritance | StudentMember extends Member |
+| Polymorphism | Method overriding (`toString()`) |
+| Collections | ArrayList & HashMap |
+| Exception Handling | Custom Exceptions |
+| Date & Time API | LocalDate & ChronoUnit |
+| Utility Classes | DateUtil & FineCalculator |
+
+---
+
+# 📂 Project Structure
+
+```text
+LIBRARY-MANAGEMENT-SYSTEM/
+│
 ├── Book.java
 ├── Member.java
 ├── StudentMember.java
@@ -49,91 +72,130 @@ LibraryManagementSystem/
 
 ---
 
-## How to Run
+# ▶️ How to Run
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/Library-Management-System-Java.git
-   cd Library-Management-System-Java
-   ```
-2. Compile:
-   ```bash
-   javac *.java
-   ```
-3. Run:
-   ```bash
-   java Main
-   ```
+### 1️⃣ Clone the Repository
 
-Requires Java 8 or higher (uses `java.time` package).
+```bash
+git clone https://github.com/karupothulamalliswari3112/LIBRARY-MANAGEMENT-SYSTEM.git
+```
+
+### 2️⃣ Open Project
+
+Open the project in:
+
+- VS Code
+- IntelliJ IDEA
+- Eclipse
+
+### 3️⃣ Compile
+
+```bash
+javac *.java
+```
+
+### 4️⃣ Run
+
+```bash
+java Main
+```
 
 ---
 
-## Sample Output / Results
+# 🖥 Sample Output
 
-**On startup** (sample data loads automatically):
-```
-Book added: The Alchemist
-Book added: Atomic Habits
-Book added: Java Fundamentals
-Member added: Ravi
-Member added: Priya
+## Main Menu
+
+```text
 ===== LIBRARY MANAGEMENT SYSTEM =====
+
 1. Add Book
 2. Add Member
 3. Issue Book
-...
-Enter choice:
+4. Return Book
+5. Search Book by Title
+6. Search Book by Author
+7. Display All Books
+8. Display Available Books
+9. Display Issued Books
+10. Display All Members
+0. Exit
 ```
 
-**Issuing a book (option 3, Book ID: B101, Member ID: M201):**
-```
-Book "The Alchemist" issued to member M201. Due date: 23-07-2026
+---
+
+## Issue Book
+
+```text
+Book "The Alchemist" issued to member M201.
+Due Date: 23-07-2026
 ```
 
-**Viewing issued books (option 9):**
-```
-BookID: B101 | Title: The Alchemist | Issued To: M201 | Issue Date: 09-07-2026 | Due Date: 23-07-2026
-```
+---
 
-**Returning the book on time (option 4):**
-```
+## Return Book
+
+```text
 Book "The Alchemist" returned.
-Returned on time. No fine.
+Returned on time.
+No Fine.
 ```
 
-**Returning a book late** (e.g. 5 days after due date):
-```
+---
+
+## Fine Calculation
+
+```text
 Book "The Alchemist" returned.
-Overdue! Fine: Rs. 25.0
-```
-
-**Error handling in action** — issuing a book already issued:
-```
-Error: Book "The Alchemist" is already issued.
+Overdue!
+Fine: Rs. 25.0
 ```
 
 ---
 
-## Screenshots
+# 📸 Screenshots
 
-*(Add terminal screenshots here after running the program — menu view, issuing a book, and the fine calculation output work well.)*
+> *(Upload screenshots later.)*
 
-| Menu | Issue Book | Fine Calculation |
-|---|---|---|
-| ![menu](screenshots/menu.png) | ![issue](screenshots/issue.png) | ![fine](screenshots/fine.png) |
-
----
-
-## Future Enhancements
-
-- Persist data to a file/database (currently in-memory only, resets on restart)
-- Multiple book copies per title
-- Reservation queue for currently-issued books
-- GUI version using JavaFX or Swing
+| Menu | Issue Book | Return Book | Fine |
+|------|------------|-------------|------|
+| Coming Soon | Coming Soon | Coming Soon | Coming Soon |
 
 ---
 
-## Author
+# 🚀 Future Enhancements
 
-Malliswari — B.Tech CSE, Ashoka Women's Engineering College
+- 💾 File Handling
+- 🗄 Database Integration (MySQL)
+- 🖥 GUI using JavaFX or Swing
+- 🌐 Web-based Library Management System
+- 📊 Reports & Analytics
+- 🔐 Login Authentication
+- 📧 Email Notifications
+
+---
+
+# 🎯 Learning Outcomes
+
+This project helped me understand:
+
+- Object-Oriented Programming
+- Java Collections Framework
+- Exception Handling
+- Java Date & Time API
+- Clean Code Structure
+- Real-world Project Development
+
+---
+
+# 👩‍💻 Author
+
+**Karupothula Malliswari**
+
+B.Tech – Computer Science & Engineering
+
+GitHub: https://github.com/karupothulamalliswari3112
+
+---
+
+⭐ **If you found this project useful, consider giving it a Star!**
