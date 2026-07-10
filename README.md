@@ -83,7 +83,7 @@ LIBRARY-MANAGEMENT-SYSTEM/
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/karupothulamalliswari3112/LIBRARY-MANAGEMENT-SYSTEM.git
+git clone https://github.com/karupothulamalliswari3112/Library-Management-System.git
 ```
 
 ### Compile
